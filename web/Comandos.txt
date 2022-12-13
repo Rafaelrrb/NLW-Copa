@@ -1,0 +1,10 @@
+npx create-next-app@latest --use-npm
+  -Criando projeto com next
+
+npm i -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+  -Cria os arquivos do tailwind
+
+npm i axios
+  -Consumir a api

@@ -1,0 +1,47 @@
+npm init -y
+  -Criar o package.jsono do projeto
+
+npm i typescript -D
+  -Usando typescript
+
+npx tsc --init
+  -Cria o tsconfig.json
+    -No arquivo subestituir por "target": "es2020"
+
+npm i fastify
+npm i @fastify/cors
+  -Usado para criar as rotas do back
+
+npm i tsx -D
+  -Compila o codigo em ts para rodar em js
+    -Cubestituir em package.json 
+      "scripts": {
+        "dev": "tsx watch src/server.ts"
+      }
+    -Rodando com
+      npm run dev
+
+npm i prisma -D
+npm i @prisma/client
+  -Cria tabelas e conecta ao banco de dados
+
+npx prisma init --datasource-provider SQLite
+  -Cria o banco e define com SQLite
+
+npx prisma migrate dev 
+  -Usado para gerar a tabela depois dela ser definida dentro do schema.prisma
+
+ npx prisma studio
+  -Usado para ver o banco de dados
+
+npm i prisma-erd-generator @mermaid-js/mermaid-cli -D
+  -npx prisma generate
+    -Usado parar criar diagramas
+
+npm i zod
+  -Biblioteca para validar campos
+
+npm i short-unique-id
+  -Biblioteca para gerar id
+  
+npm i @fastify/jwt
